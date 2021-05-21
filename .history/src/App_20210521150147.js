@@ -13,14 +13,7 @@ export class App {
             event.preventDefault();
             console.log(`入力欄の値: ${inputElement.value}`);
             //追加するTodoアイテムの要素(li要素)を作成する
-            const todoItemElement = element`<li>${inputElement.value}</li>`;
-            // Todoアイテムをcontainerに追加する
-            containerElement.appendChild(todoItemElement);
-            //Todoアイテム数を+1にし、表示されているテキストを更新する
-            todoItemCount += 1;
-            todoItemCountElement.textContent = `Todoアイテム数: ${todoItemCount}`;
-            //入力欄を空文字列にしてリセットする
-            inputElement.value = "";
+            const todoItemElement = element`<li>${inputElement.value}</li>`
         });
     }
 }
