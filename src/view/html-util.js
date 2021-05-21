@@ -1,5 +1,7 @@
 export function escapeSpecialChars(str) {
     return str
+    //一致するものを検索し、置換する
+    //http://web-dou.com/html/t023.html
         .replace(/&/g, "&amp;")
         .replace(/</g, "&lt;")
         .replace(/>/g, "&gt;")

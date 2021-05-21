@@ -1,4 +1,4 @@
-import { element } from "./view/html-util";
+import { element } from "./view/html-util.js";
 
 export class App {
     mount() {
@@ -11,7 +11,7 @@ export class App {
         formElement.addEventListener("submit", (event) => {
             //submitの本来の動作を止める
             event.preventDefault();
-            console.log(`入力欄の値: ${inputElement.value}`);
+            //console.log(`入力欄の値: ${inputElement.value}`);
             //追加するTodoアイテムの要素(li要素)を作成する
             const todoItemElement = element`<li>${inputElement.value}</li>`;
             // Todoアイテムをcontainerに追加する
